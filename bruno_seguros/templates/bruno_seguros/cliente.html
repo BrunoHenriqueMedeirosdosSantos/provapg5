@@ -1,0 +1,19 @@
+<html>
+<table border="2">
+    <tr>
+        <td>Nome</td>
+        <td>Sobrenome</td>
+        <td>RG</td>
+        <td>CPF</td>
+    </tr>
+    {% if clie in Cliente%}
+    <tr>
+        <td>{{clie.pk}}</td>
+        <td>{{clie.nomes}}</td>
+        <td>{{clie.sobrenomes}}</td>
+        <td>{{clie.rg}}</td>
+        <td>{{clie.cpf}}</td>
+    </tr>
+    {% endif%}
+</table>
+</html>
